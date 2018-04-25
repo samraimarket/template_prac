@@ -1,5 +1,6 @@
 #include <iostream>
 
+// You can define falag == false is default.
 template <bool flag = false>
 void func();
 
@@ -15,8 +16,12 @@ void func<false>() {
 
 int main() {
     std::cout << "Hello World" << std::endl;
+    
+    // You can confirm each output by these call.
     func<true>();
     func<false>();
+
+    // You can confirm the defualt is false.
     func<>();
     return 0;
 }
